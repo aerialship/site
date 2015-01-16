@@ -1,0 +1,39 @@
+h4 small
+{
+    display: block;
+    font-size: 60%;
+    color: #888;
+}
+
+.mainContent, footer.container {
+    max-width: 900px;
+}
+
+footer.container {
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 1px dashed #aaa;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        padding-top: 30px;
+    }
+}
+@media (min-width: 980px) {
+    body {
+        padding-bottom: 40px;
+    }
+}
+.product{
+    background: #5bc0de;
+}
+
+::selection {
+    background: #000000; /* WebKit/Blink Browsers */
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #000000; /* Gecko Browsers */
+    color: #ffffff;
+}
