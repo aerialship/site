@@ -1,3 +1,16 @@
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
 h4 small
 {
     display: block;
@@ -36,4 +49,9 @@ footer.container {
 ::-moz-selection {
     background: #000000; /* Gecko Browsers */
     color: #ffffff;
+}
+
+.asjs-selected {
+    color: red;
+    font-weight: bold;
 }

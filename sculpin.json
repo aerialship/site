@@ -15,12 +15,33 @@
             "homepage": "http://beausimensen.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "malsup/blockui",
+                "version": "2.65",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/malsup/blockui/archive/v2.65.zip"
+                }
+            }
+        }
+    ],
     "require": {
         "components/bootstrap": "~3.3.1",
         "components/jquery": "~1.9.1",
-        "components/highlightjs": "~7.3.0"
+        "components/highlightjs": "~7.3.0",
+        "aerialship/as-js-dist": "~0.2",
+        "malsup/form": "3.50",
+        "malsup/blockui": "2.65"
     },
     "config": {
         "component-dir": "source/components"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp .sculpin/malsup/blockui/jquery.blockUI.js  source/components/jquery.blockUI.js"
+        ]
     }
 }

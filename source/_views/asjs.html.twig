@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block aside_left %}
+    <div class="col-sm-2 sidebar">
+        <div style="padding: 2px;">
+            {% include 'includes/menu-asjs.html.twig' %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block content_wrapper %}
+    <div class="col-md-10">
+        {{ page.blocks.content|raw }}
+    </div>
+{% endblock %}
+
+{% block highlightjs %}{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script src="{{ site.url }}/components/as-js-dist/as.min.js"></script>
+    <script src="{{ site.url }}/components/form/jquery.form.js"></script>
+    <script src="{{ site.url }}/components/jquery.blockUI.js"></script>
+{% endblock %}
